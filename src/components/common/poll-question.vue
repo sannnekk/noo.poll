@@ -151,6 +151,7 @@ watchEffect(() => {
   &__description
     font-size: 0.8rem
     margin-top: 0.5em
+    white-space: pre-wrap
 
     p
       margin: 0
