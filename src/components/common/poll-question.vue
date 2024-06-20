@@ -24,18 +24,18 @@
 			class="poll-question__form"
 			v-if="questionComponent && model"
 		>
-			<component
-				:is="questionComponent"
-				:question="question"
-				:readonly="readonly"
-				v-model:answer="model"
-			/>
 			<div
 				class="poll-question__description"
 				v-if="question.description"
 			>
 				<p>{{ question.description }}</p>
 			</div>
+			<component
+				:is="questionComponent"
+				:question="question"
+				:readonly="readonly"
+				v-model:answer="model"
+			/>
 		</div>
 		<div
 			class="poll-question__form--loading"
@@ -151,7 +151,6 @@ watchEffect(() => {
   &__description
     font-size: 0.8rem
     margin-top: 0.5em
-    color: var(--text-light)
 
     p
       margin: 0
