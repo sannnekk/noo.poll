@@ -7,7 +7,7 @@
 			src="https://telegram.org/js/telegram-widget.js?22"
 			data-telegram-login="noo_polls_bot"
 			:data-size="size"
-			data-onauth="onAuthenticated(payload)"
+			data-onauth="onAuthenticated(user)"
 			data-request-access="write"
 		/>
 	</div>
@@ -30,9 +30,9 @@ withDefaults(defineProps<Props>(), {
 const emits = defineEmits<Emits>()
 
 // @ts-ignore
-window.onAuthenticated = (payload: TelegramAuthResponse) => {
-	console.log('Authenticated with Telegram', payload)
-	emits('authenticated', payload)
+window.onAuthenticated = (user: TelegramAuthResponse) => {
+	console.log('Authenticated with Telegram', user)
+	emits('authenticated', user)
 }
 </script>
 
