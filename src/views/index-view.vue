@@ -11,6 +11,14 @@
 				<welcome-block />
 			</div>
 			<div
+				class="auth-block block"
+				v-else-if="rootStore.stage === 'verification'"
+			>
+				<verification-block
+					@authenticated="rootStore.authenticateTelegram($event)"
+				/>
+			</div>
+			<div
 				class="poll-block block"
 				v-else-if="rootStore.stage === 'poll'"
 			>

@@ -76,6 +76,7 @@ declare module 'vue' {
     SunIcon: typeof import('./src/components/decorations/icons/sun-icon.vue')['default']
     SuperscriptIcon: typeof import('./src/components/decorations/icons/text-format-icons/superscript-icon.vue')['default']
     TagInput: typeof import('./src/components/input/tag-input.vue')['default']
+    TelegramAuthButton: typeof import('./src/components/button/telegram-auth-button.vue')['default']
     TelegramIcon: typeof import('./src/components/decorations/icons/telegram-icon.vue')['default']
     ThanksBlock: typeof import('./src/components/block/thanks-block.vue')['default']
     TheFooter: typeof import('./src/components/layout/the-footer.vue')['default']
@@ -84,6 +85,7 @@ declare module 'vue' {
     UploadedImage: typeof import('./src/components/common/uploaded-image.vue')['default']
     UserIcon: typeof import('./src/components/decorations/icons/user-icon.vue')['default']
     UsersIcon: typeof import('./src/components/decorations/icons/users-icon.vue')['default']
+    VerificationBlock: typeof import('./src/components/block/verification-block.vue')['default']
     VideoIcon: typeof import('./src/components/decorations/icons/text-format-icons/video-icon.vue')['default']
     WelcomeBlock: typeof import('./src/components/block/welcome-block.vue')['default']
   }

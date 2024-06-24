@@ -71,6 +71,7 @@
 		justify-content: flex-end
 		gap: 0.3rem
 		align-items: center
+		color: var(--text-light)
 
 		a
 			font-size: 0.9rem

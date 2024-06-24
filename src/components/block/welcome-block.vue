@@ -24,7 +24,7 @@
 				Перейти на платформу
 			</common-button>
 			<common-button
-				@click="rootStore.startPoll()"
+				@click="rootStore.startVerification()"
 				design="primary"
 				alignment="center"
 			>

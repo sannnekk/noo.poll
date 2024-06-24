@@ -31,11 +31,15 @@ export async function submitPoll(
 			} as unknown as PollAnswer)
 	)
 
-	await fetch(`${config.API_URL}/poll/${pollId}/answer`, {
+	const response = await fetch(`${config.API_URL}/poll/${pollId}/answer`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
 		},
 		body: JSON.stringify(answers),
 	})
+
+	if (!response.ok) {
+		throw new Error('Произошла ошибка при отправке опроса')
+	}
 }
